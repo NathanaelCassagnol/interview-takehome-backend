@@ -1,0 +1,57 @@
+h1 {
+    text-align: center
+}
+
+.grid-container {
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.component-container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.component-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 3px;
+}
+
+.component-container img {
+    overflow: hidden;
+    height: 275px;
+    width: 275px;
+
+    border-radius: revert;
+    align-content: center;
+    clear: left;
+}
+
+.component-container button{
+    padding: 1em 3em;
+}
+
+.add-button-container button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    cursor: pointer;
+    border: 2px solid;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+}
+
+.add-button-container button:hover {
+    background-color: #e7e7e7;
+    color: white;
+}
+
+.add-button-container img {
+    overflow: hidden;
+    height: 275px;
+    width: 275px;
+}
