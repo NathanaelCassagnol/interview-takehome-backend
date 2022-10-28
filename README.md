@@ -1,5 +1,44 @@
-# Getting Started with Create React App
+# Backend take-home assignment for Amazon Web Services
+## Requirements:
+### Fork this repository
+### Create AWS S3 bucket - GraphQL - Lambda Functions - implement with frontend buttons
+### Create utility function for getting all images from S3 bucket
+•	Test data is currently supplied from UnSplash - replace with a gallery of all images in your S3 bucket
 
+### Create GraphQL schema on AWS Amplify for Users and Photos
+•	Users should have list of Photos they have permission for
+
+### Create function for add button for the user to select a photo from their computer and import it to S3
+
+
+### Create AWS Lambda functions to give user access to individual photos - check if user has access
+•	[Unlock]	Lambda middleware would add photo to list of users unlocked photos
+
+•	[Download]	Lambda middleware would check if user has unlocked photo already - if so would approve download
+
+### Give Download button the ability to download selected photo from the S3 bucket
+•	Photo only downloads if user has unlocked it previously
+
+
+### Optional (not required but if implemented well would greatly improve your standing)
+•	Create CSS or React code that shows whether user owns a photo in the gallery or not
+
+### Final Overview
+1.	User logs on to site and all the photos in the S3 bucket load in gallery, locked photos have a red border - unlocked photos a green border
+2.	Clicking the add button would let the user select a photo to be added to the gallery - the photo would be added to S3 LOCKED and the gallery would refresh
+3.	Clicking Download under photo would Download photo from S3 IFF User has photo unlocked
+4.	Clicking Unlock will add photo to user's owned list and change photo border from red to green
+
+
+## Judging Criteria
+•	Cleanliness of your code
+
+•	Shown skill in AWS and React.JS
+
+•	How well your code works against edge cases: no data – user does not own photo - user unlocks multiple times - etc.
+
+
+#
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -14,57 +53,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
