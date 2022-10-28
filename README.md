@@ -19,6 +19,10 @@
 ### Give Download button the ability to download selected photo from the S3 bucket
 •	Photo only downloads if user has unlocked it previously
 
+### Document your GraphQl and Lambda Code
+•	Inside backend/lambda functions create txt files and paste your lambda functions in for review
+
+•	Inside backend/graphQL create txt files and paste your graphQL schema and API in for review
 
 ### Optional (not required but if implemented well would greatly improve your standing)
 •	Create CSS or React code that shows whether user owns a photo in the gallery or not
